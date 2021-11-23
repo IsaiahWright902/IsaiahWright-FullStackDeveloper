@@ -1,0 +1,186 @@
+.page-spacing {
+  padding-top: 30rem; }
+
+.content-spacing {
+  padding-top: 20rem; }
+
+html {
+  font-size: 62.5%; }
+  html *::after,
+  html *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.7;
+  background-color: #f7f7f7; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: white;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#141414, #141414);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 4.5rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  letter-spacing: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f7f7f7 50%);
+  background-size: 230%;
+  transition: all 0.5s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #141414;
+  font-weight: 300;
+  transform: translateX(1rem); }
+
+.navigation__link-2:link, .navigation__link-2:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 1rem 4rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 230%;
+  transition: all 0.5s; }
+  @media all and (max-width: 600px) {
+    .navigation__link-2:link, .navigation__link-2:visited {
+      font-size: 18px; } }
+
+.navigation__link-2:hover, .navigation__link-2:active {
+  background-position: 100%;
+  font-weight: 300;
+  color: black;
+  transform: translateY(-1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: grey;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s; }
+  .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+.heading-spacing {
+  padding-top: 10rem; }
+
+.heading-text {
+  font-weight: 900;
+  font-size: 20rem;
+  color: #141414;
+  transition: all 0.5s; }
+
+.heading-text-2nd {
+  font-weight: 700;
+  font-size: 4.7rem;
+  color: #141414; }
+
+.heading-hover {
+  transition: all 1s; }
+  .heading-hover:hover {
+    color: red;
+    text-decoration: underline; }
+
+.section-heading {
+  font-weight: 700;
+  font-size: 7rem;
+  color: #141414;
+  transition: all 1s; }
+
+.section-text {
+  font-size: 2.6rem;
+  transition: all 0.4s;
+  font-weight: 300; }
+
+.headshot {
+  width: 500px; }

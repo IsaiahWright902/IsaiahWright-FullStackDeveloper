@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "name": "franchise-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
