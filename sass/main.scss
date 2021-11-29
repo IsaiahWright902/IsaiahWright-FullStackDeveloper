@@ -343,6 +343,12 @@ body {
   font-weight: 300;
 }
 
+.project-spacing{
+  padding-top: 20rem;
+}
+
+
+
 // Learn More Button
 .btn-text {
   &:link,
@@ -366,4 +372,12 @@ body {
     box-shadow: 0 0.5rem 2rem rgba($color-black, 0.4); 
     transform: translateY(0);
   }
+}
+
+
+// Contact Me
+.contact-heading-2nd{
+    font-size: 3.5rem;
+  transition: all 0.4s;
+  font-weight: 300;
 }
