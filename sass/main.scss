@@ -342,3 +342,28 @@ body {
   font-size: 5rem;
   font-weight: 300;
 }
+
+// Learn More Button
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 2rem;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    transition: all 0.6s;
+  }
+
+  &:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.4); 
+    transform: translateY(0);
+  }
+}
