@@ -260,6 +260,12 @@ body {
   color: $color-black;
 }
 
+.heading-text-wde{
+  font-weight: 700;
+  font-size: 15rem;
+  color: $color-black;
+}
+
 .heading-hover {
   transition: all 1s;
   &:hover {
@@ -523,4 +529,18 @@ body {
     color: $color-grey-light;
     font-size: 2.5rem;
   }
+}
+
+// Resume 
+
+.resume{
+  width: 100%;
+  height: 100%;
+}
+
+// WDE Breakdown
+.features-heading {
+  font-size: 2.8rem;
+  font-weight: 400;
+
 }
