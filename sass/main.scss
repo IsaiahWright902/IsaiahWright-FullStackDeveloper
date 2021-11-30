@@ -252,6 +252,12 @@ body {
   font-size: 20rem;
   color: $color-black;
   transition: all 0.5s;
+  @include respond(laptop) {
+    font-size: 15rem;
+  }
+  @include respond(phone) {
+    font-size: 6rem;
+  }
 }
 
 .heading-text-2nd {
@@ -260,7 +266,7 @@ body {
   color: $color-black;
 }
 
-.heading-text-wde{
+.heading-text-wde {
   font-weight: 700;
   font-size: 15rem;
   color: $color-black;
@@ -281,17 +287,25 @@ body {
   font-size: 7rem;
   color: $color-black;
   transition: all 1s;
+  @include respond(laptop) {
+    font-size: 6rem;
+  }
 }
 
 .section-text {
   font-size: 2.6rem;
   transition: all 0.4s;
   font-weight: 300;
+  @include respond(laptop) {
+    font-size: 2.2rem;
+  }
 }
 
 // About
 .headshot {
-  width: 500px;
+  @include respond(laptop) {
+    width: 500px;
+  }
 }
 
 // Experience
@@ -335,25 +349,38 @@ body {
   width: 100px;
 }
 
-
 // Projects
-.wde-phone{
+.wde-phone {
   position: absolute;
   width: 500px;
   left: 41%;
   bottom: -5%;
 }
 
-.project-heading{
+.project-heading {
   font-size: 5rem;
   font-weight: 300;
 }
 
-.project-spacing{
+.project-spacing {
   padding-top: 20rem;
 }
 
+.wde-tablet {
+  @include respond(laptop) {
+    width: 500px;
+  }
+}
 
+.wde-phone {
+  @include respond(laptop) {
+    width: 400px;
+  }
+}
+
+.amplify {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
 
 // Learn More Button
 .btn-text {
@@ -375,165 +402,160 @@ body {
     transform: translateY(-2px);
   }
   &:active {
-    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.4); 
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.4);
     transform: translateY(0);
   }
 }
 
-
 // Contact Me
-.contact-heading-2nd{
-    font-size: 3.5rem;
+.contact-heading-2nd {
+  font-size: 3.5rem;
   transition: all 0.4s;
   font-weight: 300;
 }
 
-.form-margin{
-    //  margin: 2rem 20rem;
-    transition: all 0.4s;
-    @include respond(laptop) {
-      margin: 2rem 10rem;
-    }
-    @include respond(tab-port) {
-      margin: 2rem 2rem;
-    }
+.form-margin {
+  //  margin: 2rem 20rem;
+  transition: all 0.4s;
+  @include respond(laptop) {
+    margin: 2rem 10rem;
+  }
+  @include respond(tab-port) {
+    margin: 2rem 2rem;
+  }
 }
 
-.form-label{
-      font-size: 2.5rem;
+.form-label {
+  font-size: 2.5rem;
   transition: all 0.4s;
   font-weight: 300;
 }
 
-  .form-input {
-    width: 100%;
+.form-input {
+  width: 100%;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  height: 4.5rem;
+  font-size: 2rem;
+  transition: all 0.4s !important;
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $color-black;
+  }
+  @include respond(laptop) {
+    height: 4rem;
+  }
+  @include respond(phone) {
+    border: solid 2px black;
+  }
+}
+
+.form-input-textarea {
+  width: 100%;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  height: 25rem;
+  font-size: 2rem;
+  transition: all 0.4s;
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $color-black;
+  }
+  @include respond(laptop) {
+    height: 4rem;
+  }
+  @include respond(phone) {
+    border: solid 2px black;
+  }
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 4rem !important;
+    display: inline-block;
+    transition: all 0.6s !important;
+    position: relative;
+    font-size: 2rem !important;
+    // Change for the <button> element
     border: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    height: 4.5rem;
-        font-size: 2rem;
-    transition: all 0.4s !important;
-    &:focus {
-      outline: none;
-      border-bottom: 2px solid $color-black;
-    }
-    @include respond(laptop) {
-      height: 4rem;
-    }
-    @include respond(phone) {
-      border: solid 2px black;
-    }
+    cursor: pointer;
   }
 
-
-  .form-input-textarea {
-    width: 100%;
-    border: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    height: 25rem;
-        font-size: 2rem;
-    transition: all 0.4s;
-    &:focus {
-      outline: none;
-      border-bottom: 2px solid $color-black;
-    }
-    @include respond(laptop) {
-      height: 4rem;
-    }
-    @include respond(phone) {
-      border: solid 2px black;
-    }
-  }
-
-   .btn {
-    &,
-    &:link,
-    &:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 2rem 4rem !important;
-      display: inline-block;
-      transition: all .6s !important;
-      position: relative;
-      font-size: 2rem !important;
-      // Change for the <button> element
-      border: none;
-      cursor: pointer;
-    }
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(black, 0.6);
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      }
-    }
-
-    &:active,
-    &:focus {
-      transform: translateY(-1px);
-      box-shadow: 0.5rem 1rem rgba(black, 0.2);
-    }
-
-    &--white {
-      //Nav Button
-      background-color: $color-black !important;
-      color: white !important;
-      font-size: 2rem;
-      font-weight: 700;
-      &::after {
-        background-color: $color-black !important;
-      }
-    }
-
-
-
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.6);
     &::after {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all 0.4s;
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
     }
   }
 
+  &:active,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0.5rem 1rem rgba(black, 0.2);
+  }
 
-  // Footer 
+  &--white {
+    //Nav Button
+    background-color: $color-black !important;
+    color: white !important;
+    font-size: 2rem;
+    font-weight: 700;
+    &::after {
+      background-color: $color-black !important;
+    }
+  }
 
-.footer{
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+}
+
+// Footer
+
+.footer {
   background-color: $color-black;
 }
 
-.footer-name{
-  font-family: 'Comforter Brush', cursive;
+.footer-name {
+  font-family: "Comforter Brush", cursive;
   color: $color-grey-light;
   font-size: 7rem;
 }
 
-.footer-email{
+.footer-email {
   font-size: 1.6rem;
   color: $color-grey-light;
 }
 
-.footer-links{
-    font-size: 2rem;
+.footer-links {
+  font-size: 2rem;
   color: $color-grey-light;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.5s;
-  &:hover{
+  &:hover {
     color: $color-grey-light;
     font-size: 2.5rem;
   }
 }
 
-// Resume 
+// Resume
 
-.resume{
+.resume {
   width: 100%;
   height: 100%;
 }
@@ -542,5 +564,4 @@ body {
 .features-heading {
   font-size: 2.8rem;
   font-weight: 400;
-
 }

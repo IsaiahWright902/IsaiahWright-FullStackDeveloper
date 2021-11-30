@@ -159,6 +159,12 @@ body {
   font-size: 20rem;
   color: #141414;
   transition: all 0.5s; }
+  @media all and (max-width: 1900px) {
+    .heading-text {
+      font-size: 15rem; } }
+  @media all and (max-width: 600px) {
+    .heading-text {
+      font-size: 6rem; } }
 
 .heading-text-2nd {
   font-weight: 700;
@@ -181,14 +187,21 @@ body {
   font-size: 7rem;
   color: #141414;
   transition: all 1s; }
+  @media all and (max-width: 1900px) {
+    .section-heading {
+      font-size: 6rem; } }
 
 .section-text {
   font-size: 2.6rem;
   transition: all 0.4s;
   font-weight: 300; }
+  @media all and (max-width: 1900px) {
+    .section-text {
+      font-size: 2.2rem; } }
 
-.headshot {
-  width: 500px; }
+@media all and (max-width: 1900px) {
+  .headshot {
+    width: 500px; } }
 
 .experience-row {
   border: 2px solid #141414;
@@ -234,6 +247,17 @@ body {
 
 .project-spacing {
   padding-top: 20rem; }
+
+@media all and (max-width: 1900px) {
+  .wde-tablet {
+    width: 500px; } }
+
+@media all and (max-width: 1900px) {
+  .wde-phone {
+    width: 400px; } }
+
+.amplify {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .btn-text:link, .btn-text:visited {
   font-size: 2rem;
@@ -312,7 +336,7 @@ body {
   text-decoration: none;
   padding: 2rem 4rem !important;
   display: inline-block;
-  transition: all .6s !important;
+  transition: all 0.6s !important;
   position: relative;
   font-size: 2rem !important;
   border: none;
@@ -352,7 +376,7 @@ body {
   background-color: #141414; }
 
 .footer-name {
-  font-family: 'Comforter Brush', cursive;
+  font-family: "Comforter Brush", cursive;
   color: #f7f7f7;
   font-size: 7rem; }
 
