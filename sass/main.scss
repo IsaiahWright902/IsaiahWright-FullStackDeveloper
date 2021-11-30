@@ -375,7 +375,7 @@ body {
   display: none;
     @include respond(tablet) {
     display: block;
-  }
+  } 
 }
 
 .center-on-mobile{
