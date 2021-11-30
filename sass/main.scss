@@ -365,8 +365,27 @@ body {
 
 }
 
+.desktopOnly{
+    @include respond(tablet) {
+    display: none; 
+  }
+}
+
+.mobile-only{
+  display: none;
+    @include respond(tablet) {
+    display: block;
+  }
+}
+
 .center-on-mobile{
    @include respond(tablet) {
+    text-align: center;
+  }
+}
+
+.center-on-mobile-2nd{
+   @include respond(phone) {
     text-align: center;
   }
 }

@@ -250,7 +250,21 @@ body {
       text-align: center; } }
 
 @media all and (max-width: 768px) {
+  .desktopOnly {
+    display: none; } }
+
+.mobile-only {
+  display: none; }
+  @media all and (max-width: 768px) {
+    .mobile-only {
+      display: block; } }
+
+@media all and (max-width: 768px) {
   .center-on-mobile {
+    text-align: center; } }
+
+@media all and (max-width: 600px) {
+  .center-on-mobile-2nd {
     text-align: center; } }
 
 .headshot {
