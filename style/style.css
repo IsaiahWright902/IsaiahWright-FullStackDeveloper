@@ -1,8 +1,20 @@
+/* Small Devices, Tablets */
 .page-spacing {
   padding-top: 30rem; }
+  @media all and (max-width: 768px) {
+    .page-spacing {
+      padding-top: 10rem; } }
+
+@media all and (max-width: 768px) {
+  .reverse-row-mobile {
+    display: flex;
+    flex-direction: column-reverse; } }
 
 .content-spacing {
   padding-top: 20rem; }
+  @media all and (max-width: 768px) {
+    .content-spacing {
+      padding-top: 10rem; } }
 
 html {
   font-size: 62.5%; }
@@ -20,6 +32,11 @@ body {
   line-height: 1.7;
   background-color: #f7f7f7; }
 
+@media all and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+    transform: none !important; } }
+
 .navigation__checkbox {
   display: none; }
 
@@ -35,6 +52,10 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
   text-align: center;
   cursor: pointer; }
+  @media all and (max-width: 1200px) {
+    .navigation__button {
+      top: 2rem;
+      right: 2rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -46,6 +67,12 @@ body {
   background-image: radial-gradient(#141414, #141414);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  @media all and (max-width: 768px) {
+    .navigation__background {
+      top: 3rem;
+      right: 3rem;
+      height: 3rem;
+      width: 3rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -88,6 +115,10 @@ body {
   font-weight: 300;
   transform: translateX(1rem); }
 
+@media all and (max-width: 768px) {
+  .navigation__link {
+    font-size: 2.5rem !important; } }
+
 .navigation__link-2:link, .navigation__link-2:visited {
   display: inline-block;
   font-size: 3rem;
@@ -99,6 +130,9 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
   background-size: 230%;
   transition: all 0.5s; }
+  @media all and (max-width: 768px) {
+    .navigation__link-2:link, .navigation__link-2:visited {
+      font-size: 2rem !important; } }
   @media all and (max-width: 600px) {
     .navigation__link-2:link, .navigation__link-2:visited {
       font-size: 18px; } }
@@ -162,6 +196,9 @@ body {
   @media all and (max-width: 1900px) {
     .heading-text {
       font-size: 15rem; } }
+  @media all and (max-width: 768px) {
+    .heading-text {
+      font-size: 10rem; } }
   @media all and (max-width: 600px) {
     .heading-text {
       font-size: 6rem; } }
@@ -170,6 +207,9 @@ body {
   font-weight: 700;
   font-size: 4.7rem;
   color: #141414; }
+  @media all and (max-width: 768px) {
+    .heading-text-2nd {
+      font-size: 2.8rem; } }
 
 .heading-text-wde {
   font-weight: 700;
@@ -190,6 +230,13 @@ body {
   @media all and (max-width: 1900px) {
     .section-heading {
       font-size: 6rem; } }
+  @media all and (max-width: 768px) {
+    .section-heading {
+      font-size: 6rem;
+      text-align: center; } }
+  @media all and (max-width: 600px) {
+    .section-heading {
+      font-size: 4rem; } }
 
 .section-text {
   font-size: 2.6rem;
@@ -198,17 +245,30 @@ body {
   @media all and (max-width: 1900px) {
     .section-text {
       font-size: 2.2rem; } }
+  @media all and (max-width: 600px) {
+    .section-text {
+      text-align: center; } }
+
+@media all and (max-width: 768px) {
+  .center-on-mobile {
+    text-align: center; } }
 
 .headshot {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
   @media all and (max-width: 1900px) {
     .headshot {
       width: 500px; } }
+  @media all and (max-width: 768px) {
+    .headshot {
+      margin-bottom: 3rem; } }
 
 .experience-row {
   border: 2px solid #141414;
   padding: 2rem 0;
   transition: all 0.4s; }
+  @media all and (max-width: 600px) {
+    .experience-row {
+      border: none; } }
 
 .experience-heading {
   font-size: 2.8rem;
@@ -228,14 +288,23 @@ body {
 .experience-heading-2nd {
   font-size: 2.2rem;
   color: rgba(0, 0, 0, 0.6); }
+  @media all and (max-width: 600px) {
+    .experience-heading-2nd {
+      font-size: 2rem; } }
 
 .experience-responsibilities {
   font-size: 2.2rem; }
   .experience-responsibilities::before {
     content: "-"; }
+  @media all and (max-width: 600px) {
+    .experience-responsibilities {
+      font-size: 1.4rem; } }
 
 .uwrg-logo {
   width: 100px; }
+  @media all and (max-width: 600px) {
+    .uwrg-logo {
+      width: 75px; } }
 
 .wde-phone {
   position: absolute;
@@ -257,6 +326,10 @@ body {
 @media all and (max-width: 1900px) {
   .wde-phone {
     width: 400px; } }
+
+@media all and (max-width: 768px) {
+  .wde-phone {
+    display: none; } }
 
 .amplify {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
