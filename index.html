@@ -15,6 +15,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <link rel="icon" href="./img/favicon.ico" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="script.js"></script>
   <title>Isaiah Wright | Full-Stack Developer</title>
 </head>
 
@@ -29,19 +30,19 @@
     <nav class="navigation__nav">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#about" class="navigation__link">About</a>
+          <a href="#about" onclick="closeNav()" class="navigation__link">About</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Experience</a>
+          <a href="#experience" onclick="closeNav()" class="navigation__link">Experience</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Skills</a>
+          <a href="#skills" onclick="closeNav()" class="navigation__link">Skills</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Projects</a>
+          <a href="#projects" onclick="closeNav()" class="navigation__link">Projects</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Contact Me!</a>
+          <a href="#contact" onclick="closeNav()" class="navigation__link">Contact Me!</a>
         </li>
         <li>
           <a href="https://github.com/IsaiahWright902" class="navigation__link-2">Github</a>
@@ -111,7 +112,7 @@
     </div>
   </div>
   <div class="container content-spacing">
-    <div class="row">
+    <div class="row" id="experience">
       <div class="col-12">
         <h2 data-aos="fade-right" data-aos-delay="500" class="section-heading curve">
           Experience:
@@ -194,7 +195,7 @@
   </div>
   </div>
   <div class="container content-spacing">
-    <div class="row">
+    <div class="row" id="skills">
       <div class="col-12">
         <h2 data-aos="fade-right" data-aos-delay="500" class="section-heading curve">
           Skills & Strengths:
@@ -248,7 +249,7 @@
       </div>
     </div>
     <div class="row pt-5">
-      <div class="col-12" data-aos="fade-up" data-aos-delay="2000" data-aos-once="true">
+      <div class="col-12" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
         <p class="experience-heading">Sass</p>
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style="width: 85%; background-color: 
@@ -258,7 +259,7 @@
       </div>
     </div>
     <div class="row pt-5">
-      <div class="col-12" data-aos="fade-up" data-aos-delay="2000" data-aos-once="true">
+      <div class="col-12" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
         <p class="experience-heading">Vue</p>
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style="width: 80%; background-color: 
@@ -269,7 +270,7 @@
     </div>
   </div>
   <div class="container content-spacing">
-    <div class="row">
+    <div class="row" id="projects">
       <div class="col-12">
         <h2 data-aos="fade-right" data-aos-delay="500" class="section-heading curve">
           Projects Ive Worked On:
@@ -322,7 +323,7 @@
         <p data-aos="fade-up" data-aos-delay="600" class="project-heading">Amplify</p>
       </div>
     </div>
-    <div class="row" data-aos="fade-up" data-aos-delay="1000">
+    <div class="row" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
       <div id="carouselExampleControls" class="carousel slide amplify" data-bs-ride="carousel">
         <div class="carousel-inner"> 
           <div class="carousel-item active">
@@ -344,7 +345,7 @@
         </button>
       </div>
     </div>
-    <div class="row pt-5" data-aos="fade-up" data-aos-delay="1000">
+    <div class="row pt-5" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
       <div class="col-12">
         <p class="section-text ">
           Amplify is an app that helps users find and recommend songs to other users. Amplify is a social media app that
@@ -357,7 +358,7 @@
         </p>
       </div>
     </div>
-    <div class="row" data-aos="fade-up" data-aos-delay="1000">
+    <div class="row" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
       <div class="col-1">
 
         <a href="https://github.com/Levi-Bruner/Amplify" class="btn-text">Github </a>
@@ -369,7 +370,7 @@
     </div>
   </div>
   <div class="container content-spacing">
-    <div class="row">
+    <div class="row" id="contact">
       <div class="col-12">
         <h2 data-aos="fade-right" data-aos-delay="500" class="section-heading curve">
           Contact Me:
@@ -382,33 +383,33 @@
       <form action="">
         <div class="form-margin">
           <div class="row">
-            <div class="col-md-6" data-aos="fade-right" data-aos-delay="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="1000" data-aos-once="true">
               <p class="form-label">Name</p>
               <input id="f1-customer-first-name" required type="text" class="form-input">
             </div>
-            <div class="col-md-6" data-aos="fade-left" data-aos-delay="1000">
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="1000" data-aos-once="true">
               <p class="form-label">Email</p>
               <input id="f1-customer-first-name" required type="text" class="form-input">
             </div>
           </div>
           <div class="row pt-5">
-            <div class="col-md-6" data-aos="fade-right" data-aos-delay="1000">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="1000" data-aos-once="true">
               <p class="form-label">Company</p>
               <input id="f1-customer-first-name" required type="text" class="form-input">
             </div>
-            <div class="col-md-6" data-aos="fade-left" data-aos-delay="1000">
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="1000" data-aos-once="true">
               <p class="form-label">Role</p>
               <input id="f1-customer-first-name" required type="text" class="form-input">
             </div>
           </div>
           <div class="row pt-5">
-            <div class="col-12" data-aos="fade-up" data-aos-delay="1000">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
               <p class="form-label">Message</p>
               <textarea class="form-input-textarea" id="" cols="100" rows="100"></textarea>
             </div>
           </div>
           <div class="row pt-5">
-            <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="1000">
+            <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
               <button id="f2-button" type="submit" class="btn btn--white">Contact Now!</button>
             </div>
           </div>
