@@ -112,7 +112,7 @@ body {
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #141414;
-  font-weight: 300;
+  font-weight: 400;
   transform: translateX(1rem); }
 
 @media all and (max-width: 768px) {
@@ -139,7 +139,7 @@ body {
 
 .navigation__link-2:hover, .navigation__link-2:active {
   background-position: 100%;
-  font-weight: 300;
+  font-weight: 400;
   color: black;
   transform: translateY(-1rem); }
 
