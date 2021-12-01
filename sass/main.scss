@@ -181,7 +181,7 @@ body {
     &:active {
       background-position: 100%;
       color: $color-black;
-      font-weight: 300;
+      font-weight: 400;
       transform: translateX(1rem);
     }
     @include respond(tablet) {
@@ -216,7 +216,7 @@ body {
     &:hover,
     &:active {
       background-position: 100%;
-      font-weight: 300;
+      font-weight: 400;
       color: black;
       transform: translateY(-1rem);
     }
