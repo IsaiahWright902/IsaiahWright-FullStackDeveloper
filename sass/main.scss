@@ -16,7 +16,6 @@ $color-yellow: #e6c510;
   @if $breakpoint == tablet {
     @media all and (max-width: 768px) {
       @content;
-      
     }
   }
   @if $breakpoint == phone {
@@ -27,7 +26,6 @@ $color-yellow: #e6c510;
 }
 
 /* Small Devices, Tablets */
-
 
 @mixin rotated-text(
   $num-letters: 100,
@@ -45,23 +43,22 @@ $color-yellow: #e6c510;
 // UTILS
 .page-spacing {
   padding-top: 30rem;
-      @include respond(tablet) {
-        padding-top: 10rem;
-      }
+  @include respond(tablet) {
+    padding-top: 10rem;
+  }
 }
-.reverse-row-mobile{
+.reverse-row-mobile {
   @include respond(tablet) {
     display: flex;
-  flex-direction: column-reverse;
-  } 
+    flex-direction: column-reverse;
+  }
 }
- 
 
 .content-spacing {
   padding-top: 20rem;
-   @include respond(tablet) {
-        padding-top: 10rem;
-      }
+  @include respond(tablet) {
+    padding-top: 10rem;
+  }
 }
 
 html {
@@ -81,20 +78,15 @@ body {
   margin: 0;
   line-height: 1.7;
   background-color: $color-grey-light;
-  	// overflow: hidden;
-      
+  // overflow: hidden;
 }
 
 [data-aos-delay] {
-     @include respond(tablet) {
-     transition-delay: 0s !important;
-         transform: none !important;
-    
-    
-  }  
+  @include respond(tablet) {
+    transition-delay: 0s !important;
+    transform: none !important;
+  }
 }
-
-
 
 // Nav ////////////////////////////////////////////////////////
 .navigation {
@@ -114,10 +106,10 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
     text-align: center;
     cursor: pointer;
-     @include respond(tab-port) {
-       top: 2rem;
-       right: 2rem;
-       }
+    @include respond(tab-port) {
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__background {
@@ -130,12 +122,12 @@ body {
     background-image: radial-gradient($color-black, $color-black);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-       @include respond(tablet) {
-         top: 3rem;
-       right: 3rem;
-       height: 3rem;
-       width: 3rem;
-       }
+    @include respond(tablet) {
+      top: 3rem;
+      right: 3rem;
+      height: 3rem;
+      width: 3rem;
+    }
 
     // transform: scale(80);
   }
@@ -192,10 +184,10 @@ body {
       font-weight: 300;
       transform: translateX(1rem);
     }
-          @include respond(tablet) {
+    @include respond(tablet) {
       font-size: 2.5rem !important;
-       }
-  } 
+    }
+  }
   &__link-2 {
     &:link,
     &:visited {
@@ -214,9 +206,9 @@ body {
       );
       background-size: 230%;
       transition: all 0.5s;
-           @include respond(tablet) {
-      font-size: 2rem !important;
-       }
+      @include respond(tablet) {
+        font-size: 2rem !important;
+      }
       @include respond(phone) {
         font-size: 18px;
       }
@@ -301,9 +293,9 @@ body {
   @include respond(laptop) {
     font-size: 15rem;
   }
-   @include respond(tablet) {
+  @include respond(tablet) {
     font-size: 10rem;
-  }  
+  }
   @include respond(phone) {
     font-size: 6rem;
   }
@@ -313,10 +305,9 @@ body {
   font-weight: 700;
   font-size: 4.7rem;
   color: $color-black;
-     @include respond(tablet) {
+  @include respond(tablet) {
     font-size: 2.8rem;
-
-  }  
+  }
 }
 
 .heading-text-wde {
@@ -343,11 +334,11 @@ body {
   @include respond(laptop) {
     font-size: 6rem;
   }
-   @include respond(tablet) {
+  @include respond(tablet) {
     font-size: 6rem;
     text-align: center;
   }
-    @include respond(phone) {
+  @include respond(phone) {
     font-size: 4rem;
   }
 }
@@ -359,45 +350,45 @@ body {
   @include respond(laptop) {
     font-size: 2.2rem;
   }
-    @include respond(phone) {
+  @include respond(phone) {
     text-align: center;
   }
-
 }
 
-.desktopOnly{
-    @include respond(tablet) {
-    display: none; 
+.desktopOnly {
+  @include respond(tablet) {
+    display: none;
   }
 }
 
-.mobile-only{
+.mobile-only {
   display: none;
-    @include respond(tablet) {
+  @include respond(tablet) {
     display: block;
-  } 
+  }
 }
 
-.center-on-mobile{
-   @include respond(tablet) {
+.center-on-mobile {
+  @include respond(tablet) {
     text-align: center;
   }
 }
 
-.center-on-mobile-2nd{
-   @include respond(phone) {
+.center-on-mobile-2nd {
+  @include respond(phone) {
     text-align: center;
   }
 }
 
 // About
 .headshot {
+  width: 600px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 
   @include respond(laptop) {
     width: 500px;
   }
-   @include respond(tablet) {
+  @include respond(tablet) {
     margin-bottom: 3rem;
   }
 }
@@ -407,16 +398,14 @@ body {
   border: 2px solid $color-black;
   padding: 2rem 0;
   transition: all 0.4s;
-     @include respond(phone) {
+  @include respond(phone) {
     border: none;
   }
- 
 }
 
 .experience-heading {
   font-size: 2.8rem;
   font-weight: 600;
-  
 }
 .experience-heading-story {
   font-size: 2.6rem;
@@ -435,7 +424,7 @@ body {
 .experience-heading-2nd {
   font-size: 2.2rem;
   color: rgba(0, 0, 0, 0.6);
-    @include respond(phone) {
+  @include respond(phone) {
     font-size: 2rem;
   }
 }
@@ -445,14 +434,14 @@ body {
   &::before {
     content: "-";
   }
-     @include respond(phone) {
+  @include respond(phone) {
     font-size: 1.4rem;
   }
 }
 
 .uwrg-logo {
   width: 100px;
-     @include respond(phone) {
+  @include respond(phone) {
     width: 75px;
   }
 }
@@ -484,9 +473,9 @@ body {
   @include respond(laptop) {
     width: 400px;
   }
-     @include respond(tablet) {
+  @include respond(tablet) {
     display: none;
-  }  
+  }
 }
 
 .amplify {
