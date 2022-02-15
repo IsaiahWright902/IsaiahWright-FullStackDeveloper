@@ -268,7 +268,7 @@ body {
     text-align: center; } }
 
 .headshot {
-  width: 600px;
+  width: 500px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
   @media all and (max-width: 1900px) {
     .headshot {
