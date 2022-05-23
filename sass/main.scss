@@ -76,8 +76,30 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
-  line-height: 1.7;
-  background-color: $color-grey-light;
+  line-height: 1;
+  // background-color: $color-grey-light;
+  background-image: -webkit-linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
   // overflow: hidden;
 }
 
@@ -383,7 +405,8 @@ body {
 // About
 .headshot {
   width: 500px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
+  // box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
 
   @include respond(laptop) {
     width: 500px;
@@ -395,9 +418,13 @@ body {
 
 // Experience
 .experience-row {
-  border: 2px solid $color-black;
+  // border: 2px solid $color-black;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
+  outline: none;
+  border: none;
+  border-radius: 40px;
   padding: 2rem 0;
-  transition: all 0.4s;
+  transition: all 0.5s;
   @include respond(phone) {
     border: none;
   }
@@ -479,7 +506,7 @@ body {
 }
 
 .amplify {
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 // Learn More Button
@@ -534,13 +561,15 @@ body {
 .form-input {
   width: 100%;
   border: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
   height: 4.5rem;
   font-size: 2rem;
   transition: all 0.4s !important;
   &:focus {
-    outline: none;
-    border-bottom: 2px solid $color-black;
+    outline: 1px solid $color-black;
+    // border-bottom: 2px solid $color-black;
   }
   @include respond(laptop) {
     height: 4rem;
@@ -553,13 +582,13 @@ body {
 .form-input-textarea {
   width: 100%;
   border: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
   height: 25rem;
   font-size: 2rem;
   transition: all 0.4s;
   &:focus {
-    outline: none;
-    border-bottom: 2px solid $color-black;
+    outline: 1px solid $color-black;
   }
   @include respond(laptop) {
     height: 4rem;
@@ -664,4 +693,25 @@ body {
 .features-heading {
   font-size: 2.8rem;
   font-weight: 400;
+}
+
+.carousel-item {
+  max-width: 100%;
+  height: 575px;
+  // height: auto;
+
+  @include respond(tablet) {
+    height: auto;
+  }
+}
+
+.uwrg-leads-ul {
+  li {
+    font-size: 14px;
+  }
+  @include respond(tablet) {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+  }
 }
